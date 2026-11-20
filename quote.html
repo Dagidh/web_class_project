@@ -24,12 +24,36 @@
       <h2>Tell Us What You Need Built</h2>
       <p>Fill out the form below with your preferred item and dimensions. We will reply within <del>48 hours</del> <ins>24 hours</ins>.</p>
 
+      <!---
+
+        <div>
+          <label for="furniture-type">Furniture Type:</label><br>
+          <select id="furniture-type" name="furniture_type">
+            <option value="bed">Bed Frame</option>
+            <option value="chair">working chair</option>
+            <option value="table">Dining Table</option>
+            <option value="door">Wooden Door</option>
+            <option value="desk">Office Desk</option>
+            <option value="other">Other Custom Item</option>
+          </select>
+        </div>
+        <br>
+
+        <label for="details">Dimensions &amp; Wood Preference (Required):</label><br>
+        <textarea id="details" name="details" rows="5" cols="40" required></textarea>
+
+        <br>
+
+        <button type="submit">Send form</button>
+      </form>
+      -->
+
       <form action="register" method="post">
           <label for="customer-name" >Full Name :</label><br>
-          <input type="text"   required>
+          <input type="text" id="customer-name" name="customer_name" required>
         <br>
         <label for="phone_number">Phone Number :</label><br>
-        <input type="number"   required>
+        <input type="number" id="phone_number" name="phone_number" required>
         <br>
           <label for="customer-email">Email Address :</label><br>
           <input type="email" id="customer-email" name="customer_email">
@@ -48,8 +72,8 @@
         </div>
         <br>
 
-          <label for="details">Dimensions &amp; Wood Preference (Required):</label><br>
-          <textarea  name="details" rows="5" cols="40" required></textarea>
+          <label for="details"  >Dimensions &amp; Wood Preference (Required):</label><br>
+          <textarea  name="details" id="details" rows="5" cols="40" required></textarea>
 
         <br>
 
